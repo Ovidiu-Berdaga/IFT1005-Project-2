@@ -1,0 +1,86 @@
+:root {
+  font-size: 2.5vh;
+  font-family: Arial, sans-serif;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+#suivi {
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  margin-left: 50px;
+  width: calc(100% - 100px);
+}
+
+table {
+  border-collapse: collapse;
+  width: 95%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 6px;
+  vertical-align: bottom;
+}
+
+tr {
+  border-bottom: 1px solid grey;
+}
+
+table caption {
+  font-size: 3vh;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.tb_1 {
+  width: 30%;
+}
+
+.tb_2 {
+  width: 20%;
+}
+
+.tb_3 {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 4px;
+}
+
+.tb_4 {
+  width: 15%;
+  text-align: right;
+}
+
+progress {
+  appearance: none;
+  border-radius: 200px;
+  color: black;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+progress::-webkit-progress-bar {
+  background: lightgray;
+  border-radius: 100px;
+}
+
+progress::-webkit-progress-value {
+  background: black;
+  border-radius: 100px;
+}
+
+progress::-moz-progress-bar {
+  background: black;
+}
+
+label {
+  margin-left: 5px;
+}
