@@ -4,6 +4,7 @@
 @import url(./progres.css);
 @import url(./suivi.css);
 @import url(./video.css);
+@import url(./footer.css);
 
 html {
   position: relative;
@@ -47,6 +48,10 @@ body {
 a {
   text-decoration: none;
   color: white;
+}
+
+.container_footer a {
+  color: var(--paragraphe);
 }
 
 p {

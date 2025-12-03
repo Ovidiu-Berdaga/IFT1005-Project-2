@@ -1,22 +1,19 @@
-/*---------------------------------------------------
-                  PETIT MOBILE
----------------------------------------------------*/
-@media (max-width: 480px) {
+.container_footer {
+  width: 100%;
+  color: var(--paragraphe);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-top: 1px solid #0000001A;
+  padding: 20px;
 }
 
-/*---------------------------------------------------
-            MOBILE ET PETITE TABLETTE
----------------------------------------------------*/
-@media (min-width: 481px) and (max-width: 768px) {}
-/*---------------------------------------------------
-                      TABLETTE
----------------------------------------------------*/
-@media (min-width: 769px) and (max-width: 1024px) {}
-/*---------------------------------------------------
-                      LAPTOP
----------------------------------------------------*/
-@media (min-width: 1025px) and (max-width: 1280px) {}
-/*---------------------------------------------------
-                    DESKTOP
----------------------------------------------------*/
-@media (min-width: 1281px) {}
+.div_droite .liste_footer {
+  display: flex;
+  gap: 20px;
+}
+
+.liste_footer li a, .droits {
+  font-weight: 400;
+}
