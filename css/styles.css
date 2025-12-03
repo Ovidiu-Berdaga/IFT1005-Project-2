@@ -1,5 +1,6 @@
 @import url(./header.css);
 @import url(progresion.css);
+@import url(./form.css);
 
 html {
   width: 100vw;
@@ -12,12 +13,65 @@ html {
     font-family: "Inter", sans-serif;
     flex-wrap: wrap;
     list-style: none;
+    width: fit-content;
+}
+
+body {
+  background-color: var(--fond);
+  width: 100%;
 }
 
 a {
   text-decoration: none;
   color: white;
 }
+
+p {
+  color: var(--paragraphe);
+  font-size: 16px;
+}
+
+h2 {
+  color: var(--h2);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+label, select, option, button {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+.container_select {
+  position: relative;
+  width: fit-content;
+}
+
+.container_select::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url("../media/Vector.svg");
+  background-position: center;
+  width: 8px;
+  height: 4px;
+  top: 50%;
+  right: 0;
+  transform: translateX(-100%);
+}
+
+select {
+  background-color: var(--fond_select);
+  appearance: none;
+  padding-right: 18px;
+  border: none;
+  border-radius: 8px;
+}
+
+
 
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
