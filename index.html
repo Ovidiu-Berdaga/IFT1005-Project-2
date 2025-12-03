@@ -57,10 +57,13 @@
           </li>
           <li>
             <label for="unite">Unité</label>
-            <div class="container_select">
-              <select name="unite" id="unite" required >
-                <option value="heure">Heure</option>
-                <option value="minute">Minute</option>
+            <div class="container_select afficher">
+              <select class="select_base" name="unite" id="unite" required >
+                <option value="heures">Heures</option>
+                <option value="minutes">Minutes</option>
+              </select>
+              <select class="select_hydratation cacher" name="unite" id="unite" required >
+                <option value="verre">Verres</option>
               </select>
             </div>
           </li>
