@@ -1,30 +1,54 @@
 /* petit mobile */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  .boite_suivi {
+    overflow-x: scroll;
+  }
+
+  .boite_suivi {
+    width: 95%;
+  }
+}
 
 /* mobile et petite tablet */
-@media (min-width: 481px) and (max-width: 768px) {}
+@media (min-width: 481px) and (max-width: 768px) {
+  .boite_suivi {
+    overflow-x: scroll;
+  }
+
+  .boite_suivi {
+    width: 95%;
+  }
+}
 
 /* tablet */
-@media (min-width: 769px) and (max-width: 1024px) {}
+@media (min-width: 769px) and (max-width: 800px) {
+  .boite_suivi {
+    overflow-x: scroll;
+  }
 
-/* laptop */
-@media (min-width: 1025px) and (max-width: 1280px) {}
+  .boite_suivi {
+    width: 95%;
+  }
+}
 
-/* desktop */
-@media (min-width: 1281px) {  }
+.container_suivi {
+  width: 100%;
+  display: flex;
+  justify-content : center;
+  margin-bottom: 50px;
+}
 
-#suivi {
-  border: 2px solid lightgray;
+.boite_suivi {
+  padding: 20px ;
+  border: 1px solid #0000001A;
   border-radius: 10px;
-  margin-left: 50px;
-  width: calc(100% - 100px);
 }
 
 table {
   border-collapse: collapse;
   width: 95%;
-  margin: 20px auto;
   text-align: left;
+  width: 750px;
 }
 
 th,
@@ -33,8 +57,16 @@ td {
   vertical-align: bottom;
 }
 
+th {
+  font-weight: 500;
+}
+
+td {
+  font-weight: 400;
+}
+
 tr {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #0000001A;
 }
 
 table caption {
@@ -69,6 +101,7 @@ progress {
   border-radius: 200px;
   color: black;
   box-sizing: border-box;
+  height: 8px;
   flex: 1;
 }
 

@@ -20,7 +20,6 @@
 
 .container_progres {
   display: grid;
-  margin-bottom: 300px;
 }
 
 .carte {
@@ -80,8 +79,7 @@
       "lecture"
       "sport";
     gap: 15px;
-    margin: 0 20px;
-    margin-top: 50px;
+    margin: 50px 20px;
   }
 }
 
@@ -99,8 +97,7 @@
       "lecture"
       "sport";
     gap: 15px;
-    margin: 0 20px;
-    margin-top: 50px;
+    margin: 50px 20px;
   }
 }
 
@@ -116,8 +113,7 @@
       "hydratation sommeil"
       "lecture sport";
     gap: 15px;
-    margin: 0 20px;
-    margin-top: 50px;
+    margin: 50px 20px;
     justify-self: center;
   }
   .carte {
@@ -137,6 +133,7 @@
       "lecture sport";
     gap: 15px;
     margin-top: 50px;
+    margin-bottom: 50px;
     justify-self: center;
   }
   
@@ -157,6 +154,7 @@
       "lecture sport";
     gap: 15px;
     margin-top: 50px;
+    margin-bottom: 50px;
     justify-self: center;
   }
   

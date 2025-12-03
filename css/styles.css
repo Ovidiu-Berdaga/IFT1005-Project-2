@@ -2,6 +2,7 @@
 @import url(progresion.css);
 @import url(./form.css);
 @import url(./progres.css);
+@import url(./suivi.css);
 
 html {
   position: relative;
