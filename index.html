@@ -11,14 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>xd</title>
+    
+    <title>SantéHub</title>
   </head>
 
   <body>
     <header>
       <div class="header_div_gauche">
         <picture class="header_container_logo">
-          <img src="./media/logo.svg" alt="logo">
+          <img src="./media/logo.svg" alt="logo" />
         </picture>
         <span class="header_titre">SantéHub</span>
       </div>
@@ -30,6 +31,44 @@
         </ul>
       </div>
     </header>
+    <section class="container_form">
+      <div class="hero">
+        <h1>Tableau de bord</h1>
+        <p>Suivez vos habitudes quotidiennes et surveillez vos progrès</p>
+      </div>
+      <form class="form">
+        <h2>Ajouter une habitude quotidienne</h2>
+        <ul class="rangee_form">
+          <li>
+            <label for="habitude">Habitude</label>
+            <div class="container_select">
+              <select name="habitudes" id="habitude" required>
+                <option value="sommeil">Sommeil</option>
+                <option value="sport">Sport</option>
+                <option value="lecture">Lecture</option>
+                <option value="hydratation">Hydratation</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <label for="quantite">Quantité</label>
+            <input type="number" id="quantite" required />
+          </li>
+          <li>
+            <label for="unite">Unité</label>
+            <div class="container_select">
+              <select name="unite" id="unite" required >
+                <option value="heure">Heure</option>
+                <option value="minute">Minute</option>
+              </select>
+            </div>
+          </li>
+          <li class="container_button">
+            <button onclick="validate_form()">+ Ajouter</button>
+          </li>
+        </ul>
+      </form>
+    </section>
     <!-- <div>
       <input type="number" id="inp_hyd" min="0" required />
       <button>+ Ajouter Habitude</button>

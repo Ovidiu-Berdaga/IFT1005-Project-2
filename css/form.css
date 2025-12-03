@@ -1,14 +1,247 @@
-/* petit mobile */
-@media (max-width: 480px) {}
+/*---------------------------------------------------
+                  TYLE PARTAGEE
+---------------------------------------------------*/
+.container_form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-/* mobile et petite tablet */
-@media (min-width: 481px) and (max-width: 768px) {}
+.form {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 
-/* tablet */
-@media (min-width: 769px) and (max-width: 1024px) {}
+.form button {
+  align-self: flex-start;
+}
 
-/* laptop */
-@media (min-width: 1025px) and (max-width: 1280px) {}
+.hero {
+  padding-top: 40px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* desktop */
-@media (min-width: 1281px) {  }
+select {
+  width: 100%;
+  height: 36px;
+  padding-left: 10px;
+}
+
+input {
+  width: 100%;
+  background-color: var(--fond_select);
+  border: none;
+  border-radius: 8px;
+  height: 36px;
+}
+
+.rangee_form .container_button {
+  width: fit-content;
+}
+
+.rangee_form .container_button button {
+  padding: 10px;
+  padding-right: 30px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--vert_fonce);
+  color: white;
+}
+
+/*---------------------------------------------------
+                    PETIT MOBILE
+---------------------------------------------------*/
+@media (max-width: 480px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero p {
+    margin: 0 10px;
+    align-self: center;
+  }
+
+  .form {
+    margin-top: 25px;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    min-width: 280px;
+  }
+
+  .form .container_select {
+    width: 223px;
+  }
+
+  .rangee_form {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+
+  .rangee_form li {
+    display: flex;
+    flex-flow: column;
+    gap: 3px;
+    width: 223px;
+  }
+
+  h2 {
+    min-width: 230px;
+  }
+
+  .container_button button {
+    margin-top: 15px;
+  }
+}
+
+/*---------------------------------------------------
+            MOBILE ET PETITE TABLETTE
+---------------------------------------------------*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero p {
+    margin: 0 10px;
+    align-self: center;
+  }
+
+  .form {
+    margin-top: 25px;
+    padding: 20px 10px;
+    width: 80%;
+  }
+
+  .form .container_select {
+    width: 300px;
+  }
+
+  .rangee_form {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+  }
+
+  .rangee_form li {
+    display: flex;
+    flex-flow: column;
+    gap: 3px;
+    width: 300px;
+  }
+
+  h2 {
+    min-width: 300px;
+  }
+}
+
+/*---------------------------------------------------
+                      TABLETTE
+---------------------------------------------------*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    text-align: center;
+    width: 95%;
+    max-width: 750px;
+    align-items: flex-start;
+  }
+
+  .form {
+    margin-top: 25px;
+    padding: 20px 10px;
+    width: 95%;
+    max-width: 750px;
+  }
+
+  .form .container_select {
+    width: 230px;
+  }
+
+  .rangee_form {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    gap: 15px;
+  }
+
+  .rangee_form li {
+    display: flex;
+    flex-flow: column;
+    gap: 3px;
+    width: 230px;
+  }
+
+  .rangee_form .container_button {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .container_button button::after {
+    content: " Habitude";
+    align-self: stretch;
+  }
+
+  h2 {
+    align-self: flex-start;
+  }
+}
+
+/*---------------------------------------------------
+                  LAPTOP ET +
+---------------------------------------------------*/
+@media (min-width: 1025px) {
+  .hero {
+    width: 750px;
+    align-items: flex-start;
+  }
+
+  .form {
+    margin-top: 25px;
+    padding: 20px 10px;
+    width: 750px;
+  }
+
+  .form .container_select {
+    width: 230px;
+  }
+
+  .rangee_form {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+  }
+
+  .rangee_form li {
+    display: flex;
+    flex-flow: column;
+    gap: 3px;
+    width: 230px;
+  }
+
+  .rangee_form .container_button {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .container_button button::after {
+    content: " Habitude";
+    align-self: stretch;
+  }
+
+  h2 {
+    align-self: flex-start;
+  }
+}
