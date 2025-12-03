@@ -1,0 +1,69 @@
+.container_video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.carte_video {
+  width: 90%;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: white;
+  border-radius: 10px;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #0000001A;
+}
+
+.boite_video {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  min-height: 395px;
+}
+
+.boite_video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.carte_video h4 {
+  font-weight: 400;
+}
+
+/*---------------------------------------------------
+                  PETIT MOBILE
+---------------------------------------------------*/
+@media (max-width: 480px) {
+}
+
+/*---------------------------------------------------
+            MOBILE ET PETITE TABLETTE
+---------------------------------------------------*/
+@media (min-width: 481px) and (max-width: 768px) {
+  
+  .boite_video {
+    height: 483px;
+  }
+}
+/*---------------------------------------------------
+                      TABLETTE
+---------------------------------------------------*/
+@media (min-width: 769px) and (max-width: 800px) {
+  .boite_video {
+    height: 483px;
+  }
+}
+/*---------------------------------------------------
+                      LAPTOP ET +
+---------------------------------------------------*/
+@media (min-width: 801px) {
+  .carte_video {
+    width: 750px;
+    height: 483px;
+  }
+  .boite_video {
+    height: 100%;
+  }
+}
