@@ -4,6 +4,10 @@
                   STYLES PARTAGÉE
 ---------------------------------------------------*/
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   background-color: var(--vert_fonce);
   color: white;
@@ -11,16 +15,17 @@ header {
   justify-content: space-between;
   flex-wrap: nowrap;
   height: 64px;
-  height: 64px;
   font-size: 16px;
   gap: 10px;
   padding: 1px 20px 1px 20px;
+  z-index: 99;
 }
 
 .header_div_gauche {
   display: flex;
   align-items: center;
   gap: 7.99px;
+  padding-left: 20px;
 }
 
 .header_container_logo {

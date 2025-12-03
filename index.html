@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    <div id="ajouter" class="ancre_body"></div>
     <header>
       <div class="header_div_gauche">
         <picture class="header_container_logo">
@@ -31,7 +32,7 @@
         </ul>
       </div>
     </header>
-    <section class="container_form">
+    <section class="container container_form">
       <div class="hero">
         <h1>Tableau de bord</h1>
         <p>Suivez vos habitudes quotidiennes et surveillez vos progrès</p>
@@ -68,6 +69,72 @@
           </li>
         </ul>
       </form>
+      <div id="progres" class="ancre_scroll"></div>
+    </section>
+    <section class="container container_progres">
+      <div class="container_titre_section">
+        <h3>Progrès du jour</h3>
+      </div>
+      <div class="carte carte_hydratation">
+        <div class="container_logo_titre">
+          <picture class="container_logo">
+            <img src="./media/hydratation.svg" alt="hydratation">
+          </picture>
+          <h4 class="titre">Hydratation</h4>
+        </div>
+        <div class="container_stats">
+          <span class="fraction">0/8</span>
+          <span class="pourcentage">0%</span>
+        </div>
+        <div class="container_mesure">
+          <span class="mesure">verres</span>
+        </div>
+      </div>
+      <div class="carte carte_sommeil">
+        <div class="container_logo_titre">
+          <picture class="container_logo">
+            <img src="./media/sommeil.svg" alt="hydratation">
+          </picture>
+          <h4 class="titre">Sommeil</h4>
+        </div>
+        <div class="container_stats">
+          <span class="fraction">0/8</span>
+          <span class="pourcentage">0%</span>
+        </div>
+        <div class="container_mesure">
+          <span class="mesure">heures</span>
+        </div>
+      </div>
+      <div class="carte carte_lecture">
+        <div class="container_logo_titre">
+          <picture class="container_logo">
+            <img src="./media/lecture.svg" alt="hydratation">
+          </picture>
+          <h4 class="titre">Lecture</h4>
+        </div>
+        <div class="container_stats">
+          <span class="fraction">0/30</span>
+          <span class="pourcentage">0%</span>
+        </div>
+        <div class="container_mesure">
+          <span class="mesure">minutes</span>
+        </div>
+      </div>
+      <div class="carte carte_sport">
+        <div class="container_logo_titre">
+          <picture class="container_logo">
+            <img src="./media/sport.svg" alt="hydratation">
+          </picture>
+          <h4 class="titre">Sport</h4>
+        </div>
+        <div class="container_stats">
+          <span class="fraction">0/60</span>
+          <span class="pourcentage">0%</span>
+        </div>
+        <div class="container_mesure">
+          <span class="mesure">minutes</span>
+        </div>
+      </div>
     </section>
     <!-- <div>
       <input type="number" id="inp_hyd" min="0" required />

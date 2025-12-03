@@ -1,14 +1,166 @@
-/* petit mobile */
-@media (max-width: 480px) {}
+.carte_hydratation {
+  background-color: var(--hydratation);
+  grid-area: hydratation;
+}
 
-/* mobile et petite tablet */
-@media (min-width: 481px) and (max-width: 768px) {}
+.carte_sommeil {
+  background-color: var(--sommeil);
+  grid-area: sommeil;
+}
 
-/* tablet */
-@media (min-width: 769px) and (max-width: 1024px) {}
+.carte_lecture {
+  background-color: var(--lecture);
+  grid-area: lecture;
+}
 
-/* laptop */
-@media (min-width: 1025px) and (max-width: 1280px) {}
+.carte_sport {
+  background-color: var(--sport);
+  grid-area: sport;
+}
 
-/* desktop */
-@media (min-width: 1281px) {  }
+.container_progres {
+  display: grid;
+  margin-bottom: 300px;
+}
+
+.carte {
+  width: 100%;
+  padding: 30px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.container_logo_titre {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.container_stats {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container_titre_section h3 {
+  font-weight: 500;
+}
+
+.container_logo {
+  width: 30px;
+  height: 30px;
+}
+
+.container_logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.container_logo_titre .titre {
+  font-weight: 500;
+}
+
+.container_stats, .container_mesure {
+  font-weight: 400;
+}
+
+/*---------------------------------------------------
+                  PETITE MOBILE
+---------------------------------------------------*/
+@media (max-width: 480px) {
+  .container_progres {
+    width: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "titre"
+      "hydratation"
+      "sommeil"
+      "lecture"
+      "sport";
+    gap: 15px;
+    margin: 0 20px;
+    margin-top: 50px;
+  }
+}
+
+/*---------------------------------------------------
+            MOBILE ET PETITE TABLETTE
+---------------------------------------------------*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .container_progres {
+    width: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "titre"
+      "hydratation"
+      "sommeil"
+      "lecture"
+      "sport";
+    gap: 15px;
+    margin: 0 20px;
+    margin-top: 50px;
+  }
+}
+
+/*---------------------------------------------------
+                    TABLETTE
+---------------------------------------------------*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container_progres {
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "titre titre"
+      "hydratation sommeil"
+      "lecture sport";
+    gap: 15px;
+    margin: 0 20px;
+    margin-top: 50px;
+    justify-self: center;
+  }
+  .carte {
+    width: 360px;
+  }
+}
+
+/*---------------------------------------------------
+                      LAPTOP
+---------------------------------------------------*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container_progres {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "titre titre"
+      "hydratation sommeil"
+      "lecture sport";
+    gap: 15px;
+    margin-top: 50px;
+    justify-self: center;
+  }
+  
+  .carte {
+    width: 375px;
+  }
+}
+
+/*---------------------------------------------------
+                    DESKTOP
+---------------------------------------------------*/
+@media (min-width: 1281px) {
+  .container_progres {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "titre titre"
+      "hydratation sommeil"
+      "lecture sport";
+    gap: 15px;
+    margin-top: 50px;
+    justify-self: center;
+  }
+  
+  .carte {
+    width: 375px;
+  }
+}
