@@ -57,18 +57,18 @@
           </li>
           <li>
             <label for="unite">Unité</label>
-            <div class="container_select afficher">
+            <div class="container_select">
               <select class="select_base" name="unite" id="unite" required >
                 <option value="heures">Heures</option>
                 <option value="minutes">Minutes</option>
               </select>
-              <select class="select_hydratation cacher" name="unite" id="unite" required >
-                <option value="verre">Verres</option>
+              <select class="select_hydratation cacher" name="unite_h" id="unite_h" required >
+                <option value="verres">Verres</option>
               </select>
             </div>
           </li>
           <li class="container_button">
-            <button id="btn_form">+ Ajouter</button>
+            <button type="button" id="btn_form">+ Ajouter</button>
           </li>
         </ul>
       </form>
@@ -86,8 +86,8 @@
           <h4 class="titre">Hydratation</h4>
         </div>
         <div class="container_stats">
-          <span class="fraction">0/8</span>
-          <span class="pourcentage">0%</span>
+          <span class="fraction"><span class="compteur_hydratation">0</span>/8</span>
+          <span class="pourcentage pourcent_hydratation">0%</span>
         </div>
         <div class="container_mesure">
           <span class="mesure">verres</span>
@@ -101,8 +101,8 @@
           <h4 class="titre">Sommeil</h4>
         </div>
         <div class="container_stats">
-          <span class="fraction">0/8</span>
-          <span class="pourcentage">0%</span>
+          <span class="fraction"><span class="compteur_sommeil">0</span>/8</span>
+          <span class="pourcentage pourcent_sommeil">0%</span>
         </div>
         <div class="container_mesure">
           <span class="mesure">heures</span>
@@ -116,8 +116,8 @@
           <h4 class="titre">Lecture</h4>
         </div>
         <div class="container_stats">
-          <span class="fraction">0/30</span>
-          <span class="pourcentage">0%</span>
+          <span class="fraction"><span class="compteur_lecture">0</span>/30</span>
+          <span class="pourcentage pourcent_lecture">0%</span>
         </div>
         <div class="container_mesure">
           <span class="mesure">minutes</span>
@@ -131,8 +131,8 @@
           <h4 class="titre">Sport</h4>
         </div>
         <div class="container_stats">
-          <span class="fraction">0/60</span>
-          <span class="pourcentage">0%</span>
+          <span class="fraction"><span class="compteur_sport">0</span>/60</span>
+          <span class="pourcentage pourcent_sport">0%</span>
         </div>
         <div class="container_mesure">
           <span class="mesure">minutes</span>
@@ -156,38 +156,38 @@
             <td class="tb_1">Hydratation</td>
             <td class="tb_2">8 verres</td>
             <td class="tb_3">
-              <progress id="hydrat" max="8" value="6">Hydratation</progress
-              ><label for="hydrat">8/8</label>
+              <progress id="hydratation" max="8" value="0">Hydratation</progress
+              ><label for="hydratation"><span class="compteur_hydratation">0</span>/8</label>
             </td>
-            <td class="tb_4">75%</td>
+            <td class="tb_4 pourcent_hydratation">0%</td>
           </tr>
   
           <tr>
             <td class="tb_1">Sommeil</td>
             <td class="tb_2">8 heures</td>
             <td class="tb_3">
-              <progress id="hydrat" max="8" value="6">Sommeil</progress
-              ><label for="hydrat">8/8</label>
+              <progress id="sommeil" max="8" value="0">Sommeil</progress
+              ><label for="sommeil"><span class="compteur_sommeil">0</span>/8</label>
             </td>
-            <td class="tb_4">75%</td>
-          </tr>
-          <tr>
-            <td class="tb_1">Sport</td>
-            <td class="tb_2">60 minutes</td>
-            <td class="tb_3">
-              <progress id="hydrat" max="60" value="6">Sport</progress
-              ><label for="hydrat">60/60</label>
-            </td>
-            <td class="tb_4">75%</td>
+            <td class="tb_4 pourcent_sommeil">0%</td>
           </tr>
           <tr style="border: none">
             <td class="tb_1">Lecture</td>
             <td class="tb_2">30 minutes</td>
             <td class="tb_3">
-              <progress id="hydrat" max="30" value="6">Lecture</progress
-              ><label for="hydrat">30/30</label>
+              <progress id="lecture" max="30" value="0">Lecture</progress
+              ><label for="lecture"><span class="compteur_lecture">0</span>/30</label>
             </td>
-            <td class="tb_4">75%</td>
+            <td class="tb_4 pourcent_lecture">0%</td>
+          </tr>
+          <tr>
+            <td class="tb_1">Sport</td>
+            <td class="tb_2">60 minutes</td>
+            <td class="tb_3">
+              <progress id="sport" max="60" value="0">Sport</progress
+              ><label for="sport"><span class="compteur_sport">0</span>/60</label>
+            </td>
+            <td class="tb_4 pourcent_sport">0%</td>
           </tr>
         </table>
       </div>
