@@ -27,6 +27,7 @@ html {
 }
 
 .ancre_scroll {
+  pointer-events: none;
   position: absolute;
   bottom: 0;
   width: 100%;
