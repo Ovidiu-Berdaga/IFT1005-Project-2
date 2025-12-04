@@ -61,18 +61,21 @@ $(document).ready(function () {
 
   function majStats() {
     pourcentHydratation.html(
-      Math.floor(compteurHydratation.html()/MAX_HYDRATATION*100)+"%"
+      Math.ceil(compteurHydratation.html()/MAX_HYDRATATION*100)+"%"
     );
     hydratationProgress.attr("value", compteurHydratation.html());
     pourcentSommeil.html(
-      Math.floor(compteurSommeil.html()/MAX_SOMMEIL*100)+"%"
+      Math.ceil(compteurSommeil.html()/MAX_SOMMEIL*100)+"%"
     );
+    sommeilProgress.attr("value", compteurSommeil.html());
     pourcentLecture.html(
-      Math.floor(compteurLecture.html()/MAX_LECTURE*100)+"%"
+      Math.ceil(compteurLecture.html()/MAX_LECTURE*100)+"%"
     );
+    lectureProgress.attr("value", compteurLecture.html());
     pourcentSport.html(
-      Math.floor(compteurSport.html()/MAX_SPORT*100)+"%"
+      Math.ceil(compteurSport.html()/MAX_SPORT*100)+"%"
     );
+    SportProgress.attr("value", compteurSport.html());
   }
 
 
@@ -80,7 +83,7 @@ $(document).ready(function () {
   function ajouterHabitude(habitude) {
     if(!habitude[1]) return;
     if(habitude[0] == "hydratation") {
-      let valeur = Math.floor(parseInt(compteurHydratation.text())+habitude[1])
+      let valeur = Math.ceil(parseInt(compteurHydratation.text())+habitude[1])
       if(valeur > MAX_HYDRATATION) valeur = MAX_HYDRATATION;
       return compteurHydratation.html(valeur);
     }
@@ -89,17 +92,17 @@ $(document).ready(function () {
       case "minutes":
         if(habitude[0] == "sommeil") {
           let increment = habitude[1]/60;
-          let valeur = Math.floor(parseInt(compteurSommeil.text())+increment);
+          let valeur = Math.ceil(parseInt(compteurSommeil.text())+increment);
           if(valeur > MAX_SOMMEIL) valeur = MAX_SOMMEIL;
           compteurSommeil.html(valeur)
         }        
         if(habitude[0] == "lecture") {
-          let valeur = Math.floor(parseInt(compteurLecture.text())+habitude[1]);
+          let valeur = Math.ceil(parseInt(compteurLecture.text())+habitude[1]);
           if(valeur > MAX_LECTURE) valeur = MAX_LECTURE;
           compteurLecture.html(valeur)
         }        
         if(habitude[0] == "sport") {
-          let valeur = Math.floor(parseInt(compteurSport.text())+habitude[1]);
+          let valeur = Math.ceil(parseInt(compteurSport.text())+habitude[1]);
           if(valeur > MAX_SPORT) valeur = MAX_SPORT;
           compteurSport.html(valeur)
         }        
@@ -107,19 +110,19 @@ $(document).ready(function () {
         break;
       case "heures":
         if(habitude[0] == "sommeil") {
-          let valeur = Math.floor(parseInt(compteurSommeil.text())+habitude[1]);
+          let valeur = Math.ceil(parseInt(compteurSommeil.text())+habitude[1]);
           if(valeur > MAX_SOMMEIL) valeur = MAX_SOMMEIL;
           compteurSommeil.html(valeur)
         }        
         if(habitude[0] == "lecture") {
           let increment = habitude[1]*60;
-          let valeur = Math.floor(parseInt(compteurLecture.text())+increment);
+          let valeur = Math.ceil(parseInt(compteurLecture.text())+increment);
           if(valeur > MAX_LECTURE) valeur = MAX_LECTURE;
           compteurLecture.html(valeur)
         }        
         if(habitude[0] == "sport") {
           let increment = habitude[1]*60;
-          let valeur = Math.floor(parseInt(compteurSport.text())+increment);
+          let valeur = Math.ceil(parseInt(compteurSport.text())+increment);
           if(valeur > MAX_SPORT) valeur = MAX_SPORT;
           compteurSport.html(valeur)
         }
@@ -129,6 +132,7 @@ $(document).ready(function () {
     }
   }
   // fin ajouter habitude Progres du jour
+  
   elementToggle("#habitude");
   boutonClick("#btn_form");
 });
